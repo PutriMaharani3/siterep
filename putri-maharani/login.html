@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PerpusYuk</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="index.html" aria-label="Kembali ke Beranda">
+          <img src="assets/logo.svg" alt="Logo PERPUSYUK" />
+        </a>
+
+        <nav aria-label="Navigasi">
+          <ul>
+            <li><a class="nav-link" href="index.html#beranda">Beranda</a></li>
+            <li><a class="nav-link" href="helpdesk.html">Help Desk</a></li>
+            <li><a class="nav-link" href="index.html#informasi">Informasi</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-cta"></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="login-wrap" aria-label="Login">
+
+    <section class="login-right" aria-label="Form login">
+      <div class="login-card">
+        <h1>Selamat Datang!</h1>
+        <p class="subtle">Silakan masuk untuk melanjutkan.</p>
+
+        <form class="form" action="/login" method="post">
+          <div>
+            <div class="label">Username</div>
+            <input
+              class="input"
+              type="text"
+              name="username"
+              placeholder="Masukkan username"
+              autocomplete="username"
+              required
+            />
+          </div>
+
+          <div>
+            <div class="label">Password</div>
+            <input
+              class="input"
+              type="password"
+              name="password"
+              placeholder="Masukkan password"
+              autocomplete="current-password"
+              required
+            />
+          </div>
+
+          <div class="row">
+            <a class="textlink" href="helpdesk.html">Lupa Password?</a>
+          </div>
+
+          <div class="row" style="margin-top:10px;">
+            <button class="btn btn-dark" type="submit" style="flex:1;">
+              Login
+            </button>
+
+            <a class="btn btn-primary" href="/auth/google" style="flex:1; text-align:center;">
+              Login dengan Google
+            </a>
+          </div>
+
+          <p class="subtle" style="margin-top:12px;">
+            Belum punya akun? <a class="textlink" href="helpdesk.html">Minta bantuan Help Desk</a>
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
