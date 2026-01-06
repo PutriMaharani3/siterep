@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PerpusYuk</title>
+  <meta name="description" content="PerpusYuk — Perpustakaan digital umum, estetis, mudah diakses." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="#beranda" aria-label="PerpusYuk ke beranda">
+          <img src="assets/logo.svg" alt="Logo PERPUSYUK" />
+        </a>
+
+        <nav aria-label="Navigasi utama">
+          <ul>
+            <li><a class="nav-link" href="#beranda">Beranda</a></li>
+            <li><a class="nav-link" href="#tentang">Tentang Kami</a></li>
+            <li><a class="nav-link" href="#koleksi">Koleksi</a></li>
+            <li><a class="nav-link" href="#layanan">Layanan</a></li>
+            <li><a class="nav-link" href="#faq">FAQ</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-cta">
+          <a class="btn" href="login.html">Masuk</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO / SLIDER -->
+  <main id="beranda" class="hero" aria-label="Beranda">
+    <div class="container">
+      <div class="hero-shell">
+
+        <!-- Radio controls -->
+        <input class="sr-only hero-radio" type="radio" name="hero" id="hero-1" checked>
+        <input class="sr-only hero-radio" type="radio" name="hero" id="hero-2">
+
+        <div class="hero-track" aria-label="Slider">
+          <!-- SLIDE 1 -->
+         <section class="hero-slide" aria-label="Slide 1">
+            <div class="hero-image-frame">
+              <img src="assets/hero-slide1.png" alt="Visual PerpusYuk" class="hero-image">
+            </div>
+          </section>
+          <!-- SLIDE 2 -->
+          <section class="hero-slide" aria-label="Slide 2">
+            <div class="slide-grid">
+              <div class="slide-left">
+                <div class="badge"><span class="dot"></span> Koleksi Buku + Akses Mudah</div>
+                <h1>Koleksi Konten <span class="grad">PerpusYuk Lebih Seru Untuk Semua </span><br/></h1>
+                <p>
+                  Perpustakaan Digital dengan pencarian cepat dan mudah diakses untuk menemukan koleksi. Help Desk untuk bantuan kendala.
+                </p>
+
+                <div class="hero-actions">
+                  <a class="btn btn-primary" href="#koleksi">Buka Koleksi</a>
+                  <a class="btn btn-dark" href="#koleksi-terbaru">Koleksi Terbaru</a>
+                </div>
+              </div>
+
+              <div class="slide-right" aria-label="Panel fitur">
+                <div class="device">
+                  <div class="top">
+                    <span>Info PerpusYuk</span>
+                    <div class="chips" aria-hidden="true"><span></span><span></span><span></span></div>
+                  </div>
+
+                  <div class="screen">
+                    <a class="card-mini card-mini-link" href="#koleksi" aria-label="Menuju Koleksi">
+                      <strong>Pencarian Cepat</strong>
+                      <small>Klik untuk menuju ke Koleksi</small>
+                    </a>
+
+                    <a class="card-mini card-mini-link" href="#faq" aria-label="Menuju FAQ">
+                      <strong>FAQ</strong>
+                      <small>Klik untuk menuju ke FAQ</small>
+                    </a>
+
+                    <a class="card-mini card-mini-link" href="helpdesk.html" aria-label="Buka Help Desk">
+                      <strong>Butuh Bantuan</strong>
+                      <small>Klik untuk menuju Help Desk</small>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Controls -->
+        <div class="hero-controls" aria-label="Kontrol slider">
+          <div class="hero-arrows" aria-hidden="true">
+            <label class="iconbtn" for="hero-1" title="Slide 1">‹</label>
+            <label class="iconbtn" for="hero-2" title="Slide 2">›</label>
+          </div>
+
+          <div class="hero-dots" aria-label="Indikator slide">
+            <label class="dotbtn" for="hero-1" aria-label="Slide 1"></label>
+            <label class="dotbtn" for="hero-2" aria-label="Slide 2"></label>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- KOLEKSI TERBARU -->
+  <section id="koleksi-terbaru" aria-label="Koleksi Terbaru PerpusYuk">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>Koleksi Terbaru</h2>
+        </div>
+      </div>
+
+      <div class="flip-grid">
+        <!-- ATOMIC HABITS -->
+        <div class="flip-card">
+          <input class="flip-toggle sr-only" type="checkbox" id="flip-1">
+          <label class="flip-inner" for="flip-1" aria-label="Flip Atomic Habits">
+            <span class="flip-face flip-front">
+              <img class="flip-cover" src="assets/koleksi1.jpg" alt="Cover Atomic Habits">
+              <span class="flip-front-info">
+                <span class="flip-title">Atomic Habits</span>
+              </span>
+            </span>
+
+            <span class="flip-face flip-back">
+            </span>
+          </label>
+        </div>
+
+        <!-- FILOSOFI TERAS -->
+        <div class="flip-card">
+          <input class="flip-toggle sr-only" type="checkbox" id="flip-2">
+          <label class="flip-inner" for="flip-2" aria-label="Flip Filosofi Teras">
+            <span class="flip-face flip-front">
+              <img class="flip-cover" src="assets/koleksi2.jpg" alt="Cover Filosofi Teras">
+              <span class="flip-front-info">
+                <span class="flip-title">Filosofi Teras</span>
+              </span>
+            </span>
+
+            <span class="flip-face flip-back">
+            </span>
+          </label>
+        </div>
+
+        <!-- PSYCHOLOGY OF MONEY -->
+        <div class="flip-card">
+          <input class="flip-toggle sr-only" type="checkbox" id="flip-3">
+          <label class="flip-inner" for="flip-3" aria-label="Flip The Psychology of Money">
+            <span class="flip-face flip-front">
+              <img class="flip-cover" src="assets/koleksi3.jpg" alt="Cover The Psychology of Money">
+              <span class="flip-front-info">
+                <span class="flip-title">The Psychology of Money</span>
+              </span>
+            </span>
+
+            <span class="flip-face flip-back">
+            </span>
+          </label>
+        </div>
+
+        <!-- BERANI TIDAK DISUKAI -->
+        <div class="flip-card">
+          <input class="flip-toggle sr-only" type="checkbox" id="flip-4">
+          <label class="flip-inner" for="flip-4" aria-label="Flip Berani Tidak Disukai">
+            <span class="flip-face flip-front">
+              <img class="flip-cover" src="assets/koleksi4.png" alt="Cover Berani Tidak Disukai">
+              <span class="flip-front-info">
+                <span class="flip-title">Berani Tidak Disukai</span>
+              </span>
+            </span>
+
+            <span class="flip-face flip-back">
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Koleksi -->
+<section id="koleksi" aria-label="Koleksi Buku PerpusYuk">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <h2>Koleksi</h2>
+        <p>Klik buku untuk melihat deskripsi singkat.</p>
+      </div>
+    </div>
+
+    <div class="koleksi-shell reveal">
+      <div class="koleksi-toolbar" aria-label="Toolbar koleksi">
+        <!-- Catatan -->
+        <div class="search-wrap">
+          <input class="search-input" type="search" placeholder="Telusuri koleksi..." aria-label="Telusuri koleksi">
+          <span class="search-icon" aria-hidden="true">🔎</span>
+        </div>
+
+        <select class="sort-select" aria-label="Urutkan koleksi">
+          <option>Urutkan: Judul (A–Z)</option>
+          <option>Urutkan: Judul (Z–A)</option>
+          <option>Urutkan: Tahun Terbaru</option>
+          <option>Urutkan: Tahun Terlama</option>
+        </select>
+      </div>
+
+      <div class="koleksi-grid koleksi-accordion" aria-label="Daftar buku">
+
+        <!-- Buku 1 -->
+        <details class="book-acc">
+          <summary class="book-sum">
+            <img class="cover" src="assets/buku-hujan.jpg" alt="Cover Hujan - Tere Liye">
+            <div class="info">
+              <h3 class="title">Hujan</h3>
+              <p class="meta">Tere Liye</p>
+            </div>
+            <span class="chev" aria-hidden="true">⌄</span>
+          </summary>
+
+          <div class="book-desc">
+            <p>
+              Novel tentang persahabatan, kehilangan, dan harapan—dengan latar masa depan.
+              Cerita mengalir hangat dan emosional, cocok untuk pembaca yang suka drama & refleksi.
+            </p>
+          </div>
+        </details>
+
+        <!-- Buku 2 -->
+        <details class="book-acc">
+          <summary class="book-sum">
+            <img class="cover" src="assets/buku-licm.jpg" alt="Cover Library and Information Center Management">
+            <div class="info">
+              <h3 class="title">Library and Information Center Management</h3>
+              <p class="meta">Robert D.Stueart</p>
+            </div>
+            <span class="chev" aria-hidden="true">⌄</span>
+          </summary>
+
+          <div class="book-desc">
+            <p>
+              Membahas pengelolaan perpustakaan/pusat informasi: layanan, SDM, kebijakan, dan strategi
+              manajemen untuk meningkatkan kualitas layanan dan operasional.
+            </p>
+          </div>
+        </details>
+
+        <!-- Buku 3 -->
+        <details class="book-acc">
+          <summary class="book-sum">
+            <img class="cover" src="assets/buku-analisis-sastra.jpg" alt="Cover Analisis Sastra">
+            <div class="info">
+              <h3 class="title">Analisis Sastra</h3>
+              <p class="meta">Dian Pratiwi</p>
+            </div>
+            <span class="chev" aria-hidden="true">⌄</span>
+          </summary>
+
+          <div class="book-desc">
+            <p>
+              Pengantar memahami karya sastra melalui unsur intrinsik dan ekstrinsik.
+              Cocok untuk tugas kuliah, pembelajaran, dan latihan membaca kritis.
+            </p>
+          </div>
+        </details>
+
+        <!-- Buku 4 -->
+        <details class="book-acc">
+          <summary class="book-sum">
+            <img class="cover" src="assets/buku-hp5.jpg" alt="Cover Harry Potter (Buku 5)">
+            <div class="info">
+              <h3 class="title">Harry Potter (Buku 5)</h3>
+              <p class="meta">J.K. Rowling</p>
+            </div>
+            <span class="chev" aria-hidden="true">⌄</span>
+          </summary>
+
+          <div class="book-desc">
+            <p>
+              Petualangan lanjutan di Hogwarts dengan konflik yang makin besar.
+              Cerita berfokus pada keberanian, persahabatan, dan ancaman dunia sihir.
+            </p>
+          </div>
+        </details>
+
+        <!-- Buku 5 -->
+        <details class="book-acc">
+          <summary class="book-sum">
+            <img class="cover" src="assets/buku-when-things.jpg" alt="Cover When Things Don’t Go Your Way">
+            <div class="info">
+              <h3 class="title">When Things Don’t Go Your Way</h3>
+              <p class="meta">Haemin Sunim</p>
+            </div>
+            <span class="chev" aria-hidden="true">⌄</span>
+          </summary>
+
+          <div class="book-desc">
+            <p>
+              Buku reflektif untuk menerima keadaan, mengelola harapan, dan tetap tenang
+              saat rencana tidak berjalan sesuai keinginan.
+            </p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- TENTANG KAMI -->
+  <section id="tentang" aria-label="Tentang Kami">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>Tentang Kami</h2>
+          <p>Profil Perpustakaan PerpusYuk & Pengguna Aktif.</p>
+        </div>
+      </div>
+
+      <div class="user-grid">
+        <!-- Profil Perpustakaan -->
+        <article class="user-card">
+          <div class="user-top">
+            <div class="user-photo">
+              <img src="assets/logo.png" alt="Logo PerpusYuk">
+            </div>
+            <div>
+              <h3 class="user-name">PerpusYuk</h3>
+              <div class="user-role">Perpustakaan Umum Digital</div>
+            </div>
+          </div>
+
+          <p class="user-quote">
+            PerpusYuk menyediakan layanan koleksi digital yang mudah diakses, nyaman dibaca,
+            dan ramah untuk semua kalangan.
+          </p>
+
+          <div class="user-badges">
+            <span class="user-badge blue">🏛️ Perpustakaan Umum</span>
+            <span class="user-badge orange">🌐 Digital Library</span>
+          </div>
+        </article>
+
+        <!-- User 2 -->
+        <article class="user-card">
+          <div class="user-top">
+            <div class="user-photo">
+              <img src="assets/user2.jpeg" alt="Foto Pengguna Aktif 2">
+            </div>
+            <div>
+              <h3 class="user-name">Putri Maharani Mutiara</h3>
+              <div class="user-role">Mahasiswa UIN Jakarta</div>
+            </div>
+          </div>
+
+          <p class="user-quote">
+            “Suka banget sama Web PerpusYuk!! Tampilan nya bagus dan gampang banget cari koleksi nya.”
+          </p>
+
+          <div class="user-badges">
+            <span class="user-badge blue">📚 Pembaca Aktif</span>
+          </div>
+        </article>
+
+        <!-- User 3 -->
+        <article class="user-card">
+          <div class="user-top">
+            <div class="user-photo">
+              <img src="assets/user3.jpeg" alt="Foto Pengguna Aktif 3">
+            </div>
+            <div>
+              <h3 class="user-name">Rizka Fazarani Mutiara</h3>
+              <div class="user-role">Pekerja</div>
+            </div>
+          </div>
+
+          <p class="user-quote">
+            “Tampilan aplikasinya nyaman, dan koleksi kontennya lengkap untuk belajar.”
+          </p>
+
+          <div class="user-badges">
+            <span class="user-badge blue">📚 Pembaca Aktif</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- LAYANAN -->
+  <section id="layanan" aria-label="Layanan">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>Layanan</h2>
+          <p>Fitur utama yang tersedia di PerpusYuk.</p>
+        </div>
+      </div>
+
+      <div class="layanan-grid">
+        <article class="layanan-card">
+          <div class="layanan-icon" aria-hidden="true">🔎</div>
+          <h3>Pencarian Koleksi</h3>
+          <p>Temukan buku lebih cepat berdasarkan judul, penulis, atau kata kunci yang kamu butuhkan.</p>
+        </article>
+
+        <article class="layanan-card">
+          <div class="layanan-icon" aria-hidden="true">📚</div>
+          <h3>Koleksi Digital</h3>
+          <p>Koleksi yang terus diperbarui agar pengunjung bisa membaca kapan saja dan di mana saja.</p>
+        </article>
+
+        <article class="layanan-card">
+          <div class="layanan-icon" aria-hidden="true">🛟</div>
+          <h3>Bantuan Pengguna</h3>
+          <p>Jika ada kendala, kamu bisa melihat FAQ atau menghubungi Help Desk untuk bantuan lebih lanjut.</p>
+        </article>
+          </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" aria-label="FAQ">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>FAQ</h2>
+          <p>Pertanyaan yang sering ditanyakan pengunjung.</p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <details>
+          <summary>Apakah PerpusYuk berbayar? <span class="chev" aria-hidden="true">⌄</span></summary>
+          <p>Penggunaan Web PerpusYuk tidak dikenakan biaya. Bisa diakses oleh siapa pun kapan saja.</p>
+        </details>
+
+        <details>
+          <summary>Apakah bisa digunakan untuk Android & iOS? <span class="chev" aria-hidden="true">⌄</span></summary>
+          <p>Bisa. Web responsif dan nyaman dibuka di smartphone, tablet, dan komputer.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="informasi" aria-label="Footer PerpusYuk">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-card">
+          <div class="footer-brand">
+            <img src="assets/logo.svg" alt="Logo PerpusYuk" />
+          </div>
+          <p style="margin-top:10px;">
+            Jl. Semanan Raya No.19, Jakarta Barat, DKI Jakarta, 11850
+          </p>
+        </div>
+
+        <div class="footer-card">
+          <h3>Informasi</h3>
+          <div class="footer-links">
+            <a href="helpdesk.html">Help Desk</a>
+            <a href="#faq">FAQ</a>
+            <a href="login.html">Masuk</a>
+          </div>
+        </div>
+
+        <div class="footer-card">
+          <h3>Hubungi Kami</h3>
+          <div class="footer-links">
+            <a href="https://wa.me/6281293535737" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="mailto:perpusyuk@gmail.com">Email</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footnote">Hak Cipta Dilindungi Undang-undang © 2026. PerpusYuk.</div>
+    </div>
+  </footer>
+
+  <!-- FLOATING CHAT -->
+  <div class="fab" aria-label="Chat bubble">
+    <input class="sr-only" type="checkbox" id="fab-toggle">
+    <div class="fab-panel" aria-label="Panel chat">
+      <strong>Butuh Bantuan?</strong>
+      <div class="fab-sub">Hubungi kami di bawah.</div>
+
+      <div class="fab-actions">
+        <a href="https://wa.me/6281293535737" target="_blank" rel="noopener">WhatsApp <span>↗</span></a>
+        <a href="mailto:perpusyuk@gmail.com">Email <span>↗</span></a>
+        <a href="#beranda">Scroll ke atas <span>↑</span></a>
+      </div>
+    </div>
+
+    <label class="fab-main" for="fab-toggle" aria-label="Buka chat">
+      💬
+    </label>
+  </div>
+</body>
+</html>
